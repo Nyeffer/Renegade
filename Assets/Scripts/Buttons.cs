@@ -9,6 +9,7 @@ public class Buttons : MonoBehaviour {
 
 	public void StartToLevelSelect() {
 		SceneManager.LoadScene("CharacterSelection", LoadSceneMode.Single);
+		PlayerPrefs.SetInt("PlayerLevel", 1);
 	}
 
 	public void RotateCharacterSelectionRight() {
@@ -17,5 +18,17 @@ public class Buttons : MonoBehaviour {
 
 	public void RotateCharacterSelectionLeft() {
 		CharacterSelection.transform.Rotate(new Vector3(0, -90, 0));
+	}
+
+	public void PlayAgain() {
+		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
+	}
+	
+	public void Quit() {
+		Application.Quit();
+	}
+
+	public void SelectCharacter() {
+		SceneManager.LoadScene("LevelSelection", LoadSceneMode.Single);
 	}
 }
