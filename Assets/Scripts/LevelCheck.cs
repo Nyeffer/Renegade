@@ -11,7 +11,7 @@ public class LevelCheck : MonoBehaviour {
 	private int counter;
 
 	void Awake() {
-		playerLevel = PlayerPrefs.GetInt("PlayerLevel", 0);
+		playerLevel = PlayerPrefs.GetInt("PlayerLevel");
 		counter = 1;
 	}	
 

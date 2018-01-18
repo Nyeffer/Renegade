@@ -7,15 +7,10 @@ public class Buttons : MonoBehaviour {
 
 	public GameObject CharacterSelection;
 
-	private int playerLevel;
-
-	void Start() {
-		PlayerPrefs.SetInt("PlayerLevel", 5);
-	}
 
 	public void StartToLevelSelect() {
 		SceneManager.LoadScene("CharacterSelection", LoadSceneMode.Single);
-		// PlayerPrefs.SetInt("PlayerLevel", 1);
+		PlayerPrefs.SetInt("PlayerLevel", 1);
 	}
 
 	public void RotateCharacterSelectionRight() {
@@ -36,5 +31,9 @@ public class Buttons : MonoBehaviour {
 
 	public void SelectCharacter() {
 		SceneManager.LoadScene("LevelSelection", LoadSceneMode.Single);
+	}
+
+	public void Play() {
+		SceneManager.LoadScene("Testing", LoadSceneMode.Single);
 	}
 }
