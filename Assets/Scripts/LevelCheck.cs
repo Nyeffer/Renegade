@@ -28,48 +28,27 @@ public class LevelCheck : MonoBehaviour {
 	}
 
 	public void SelectLevelUp() {
-		if(counter == 1) {
-			LevelSelection.transform.position += new Vector3(0, -250, 0);
+		if(counter == 1 && PlayerPrefs.GetInt("PlayerLevel") >= 2) {
+			Levels[counter - 1].SetActive(false);
 			counter = 2;
 			Debug.Log(counter);
-		} else if(counter == 2) {
-			LevelSelection.transform.position += new Vector3(0, -250, 0);
+		} else if(counter == 2 && PlayerPrefs.GetInt("PlayerLevel") >= 3) {
+			Levels[counter - 1].SetActive(false);
 			counter = 3;
 			Debug.Log(counter);
-		} else if(counter == 3) {
-			LevelSelection.transform.position += new Vector3(0, -250, 0);
+		} else if(counter == 3 && PlayerPrefs.GetInt("PlayerLevel") >= 4) {
+			Levels[counter - 1].SetActive(false);
 			counter = 4;
 			Debug.Log(counter);
-		} else if(counter == 4) {
-			LevelSelection.transform.position += new Vector3(0, -250, 0);
+		} else if(counter == 4 && PlayerPrefs.GetInt("PlayerLevel") >= 5) {
+			Levels[counter - 1].SetActive(false);
 			counter = 5;
 			Debug.Log(counter);
 		} else if (counter == 5) {
-			LevelSelection.transform.position += new Vector3(0, 1000, 0);
+			for (int i = 0; i <= num_Levels; i++) {
+				Levels[i].SetActive(true);
+			}
 			counter = 1;
 		}
-	}
-	public void SelectLevelDown() {
-		if(counter == 1) {
-			LevelSelection.transform.position += new Vector3(0, 250, 0);
-			counter = 2;
-			Debug.Log(counter);
-		} else if(counter == 2) {
-			LevelSelection.transform.position += new Vector3(0, 250, 0);
-			counter = 3;
-			Debug.Log(counter);
-		} else if(counter == 3) {
-			LevelSelection.transform.position += new Vector3(0, 250, 0);
-			counter = 4;
-			Debug.Log(counter);
-		} else if(counter == 4) {
-			LevelSelection.transform.position += new Vector3(0, 250, 0);
-			counter = 5;
-			Debug.Log(counter);
-		} else if (counter == 5) {
-			LevelSelection.transform.position += new Vector3(0, -1000, 0);
-			counter = 1;
-		}
-
 	}
 }

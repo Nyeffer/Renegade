@@ -10,7 +10,7 @@ public class Buttons : MonoBehaviour {
 
 	public void StartToLevelSelect() {
 		SceneManager.LoadScene("CharacterSelection", LoadSceneMode.Single);
-		PlayerPrefs.SetInt("PlayerLevel", 1);
+		PlayerPrefs.SetInt("PlayerLevel", 5);
 	}
 
 	public void RotateCharacterSelectionRight() {
