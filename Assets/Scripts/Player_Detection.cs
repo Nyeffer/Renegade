@@ -21,14 +21,12 @@ public class Player_Detection : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if(isSeeking) {
-			Vector3 pos = gameObject.transform.position;
-			if(target.transform.position.x < transform.position.x) {
-				pos.x -= moveSpeed * Time.deltaTime;
-				gameObject.transform.position = pos;
-			} else if ( target.transform.position.x > transform.position.x) {
-				pos.x += moveSpeed * Time.deltaTime;
-				gameObject.transform.position = pos;
+		if(Vector3.Distance(target.transform.position, this.transform.position) < 10) {
+			Vector3 pos = target.transform.position - this.transform.position;
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
+
+			if(pos.magnitude > 5) {
+				this.transform.Translate(0, 0, 0.5f);
 			}
 		}
 	}
