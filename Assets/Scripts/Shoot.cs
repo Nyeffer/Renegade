@@ -20,7 +20,6 @@ public class Shoot : MonoBehaviour {
 			if(Time.time - lastFired > 1/fireRate) {
 				lastFired = Time.time;
 				Instantiate(bullet, nuzzle.transform.position, nuzzle.transform.rotation);
-				Destroy(bullet, 0.5f);
 			}
 		}
 	}

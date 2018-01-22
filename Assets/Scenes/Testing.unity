@@ -144,7 +144,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3a2f60a95043cb341962a547ef461130, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 372048882}
   - component: {fileID: 372048881}
   - component: {fileID: 372048880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4216237086133158, guid: 36e0255a5f5357d4fad6c234c73607cd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4216237086133158, guid: 36e0255a5f5357d4fad6c234c73607cd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -327,7 +327,7 @@ Prefab:
         type: 2}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 1074333961720554, guid: b9ad53c46297cc040804f832c3b18f81,
+      objectReference: {fileID: 1245453342033844, guid: 9ade7e935e899924db48f934a3cfcd16,
         type: 2}
     - target: {fileID: 4037473243719658, guid: 36e0255a5f5357d4fad6c234c73607cd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 1994615683}
   - component: {fileID: 1994615682}
   - component: {fileID: 1994615681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

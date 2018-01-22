@@ -14,5 +14,6 @@ public class BulletBehavior : MonoBehaviour {
     void Update() {
         velocity = velocity + this.transform.right * moveSpeed;
         rigidbody.velocity = velocity;
+        Destroy(gameObject, 1.0f);
     }
 }
