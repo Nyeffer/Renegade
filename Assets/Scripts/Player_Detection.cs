@@ -6,8 +6,6 @@ public class Player_Detection : MonoBehaviour {
 	private GameObject target;
 	private Rigidbody rigidbody;
 	public Vector3 velocity;
-	public Vector3 steering;
-	public Vector3 desiredVelocity;
 	public bool isSeeking;
 	public float moveSpeed;
 

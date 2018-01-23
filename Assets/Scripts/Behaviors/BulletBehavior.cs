@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletBehavior : MonoBehaviour {
     private Rigidbody rigidbody;
     public Vector3 velocity;
+    public float timeTillDestroy = 1.0f;
     public float moveSpeed = 3.0f;
 
     void Start() {
@@ -14,6 +15,6 @@ public class BulletBehavior : MonoBehaviour {
     void Update() {
         velocity = velocity + this.transform.right * moveSpeed;
         rigidbody.velocity = velocity;
-        Destroy(gameObject, 1.0f);
+        Destroy(gameObject, timeTillDestroy);
     }
 }
