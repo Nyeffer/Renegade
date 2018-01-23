@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114752079564697736}
   m_Layer: 0
   m_Name: SpikeShot
-  m_TagString: Untagged
+  m_TagString: PlayerObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
