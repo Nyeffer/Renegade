@@ -19,14 +19,12 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	void Update() {
-		TakeDamage(1);
 		if(isDamaged) {
 			// Do Something
 		} else {
 			// Do Something else
 		} 
 		isDamaged = false;
-		Debug.Log(curHealth);
 	}
 
 	public void TakeDamage(int damageDealt) {

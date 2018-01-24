@@ -7,7 +7,7 @@ public class BulletBehavior : MonoBehaviour {
     public Vector3 velocity;
     public float timeTillDestroy = 1.0f;
     public float moveSpeed = 3.0f;
-    
+    public int damage = 10;
 
     void Start() {
         rigidbody = GetComponent<Rigidbody>();
@@ -19,8 +19,8 @@ public class BulletBehavior : MonoBehaviour {
         Destroy(gameObject, timeTillDestroy);
     }
 
-    // public int GetDamage() {
-        
-    // }
+    public int GetDamage() {
+        return damage;
+    }
 
 }

@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 195396684952991700}
   - component: {fileID: 135496651835757264}
   - component: {fileID: 114132191150259386}
+  - component: {fileID: 114161671929499906}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -259,6 +260,21 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isSeeking: 0
   moveSpeed: 0
+--- !u!114 &114161671929499906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370075771528236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839ff5b7b6f7b4d4182c6bbd09d37645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  curHealth: 0
+  FullHp: {fileID: 2100000, guid: 5f50c3daea2da2549bb9572c0b1aaa6e, type: 2}
+  NearDeath: {fileID: 2100000, guid: 40b46662ec516ff4e95de02acc6662ca, type: 2}
 --- !u!135 &135496651835757264
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -278,7 +294,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370075771528236}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
