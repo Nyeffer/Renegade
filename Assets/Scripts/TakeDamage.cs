@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakeDamage : MonoBehaviour {
+
+public class TakeDamage : MonoBehaviour, IDamageable<int> {
 	public int maxHealth = 100;
-	public int Atk = 10;
+	public int Atk;
 	public int curHealth;
 
 	void Start() {
@@ -13,8 +14,9 @@ public class TakeDamage : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if(col.gameObject.tag == "PlayerObjects" && gameObject.tag == "Enemy") {
+			
 			curHealth -= Atk;
-			Debug.Log(curHealth);
+			Debug.Log(Atk);
 		}
 
 		if( col.gameObject.tag == "EnemyObjects" && gameObject.tag == "Player") {
@@ -23,5 +25,11 @@ public class TakeDamage : MonoBehaviour {
 		}
 	}
 
+	public void SetDamage(int damage) {
+		Atk = damage;
+	}
 
+	public int GetDamage() {
+		return Atk;
+	}
 }

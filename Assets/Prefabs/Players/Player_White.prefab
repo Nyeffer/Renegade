@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61eb972ab5a1744b969920aa470bdf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1006906720767064, guid: e9af92e4472c6584db8c781cee7ff034, type: 2}
+  bullet: {fileID: 1374240575928360, guid: e25218032c437824faa942a23546b3b7, type: 2}
   nuzzle: {fileID: 4037473243719658}
   fireRate: 10
   lastFired: 0
