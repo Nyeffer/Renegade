@@ -9,6 +9,8 @@ public class Player_Detection : MonoBehaviour {
 	public bool isSeeking;
 	public float moveSpeed;
 
+	public float distanceToSeek = 10;
+
 	void Awake() {
 		rigidbody = GetComponent<Rigidbody>();
 		velocity = rigidbody.velocity;
@@ -20,11 +22,11 @@ public class Player_Detection : MonoBehaviour {
 
 	void FixedUpdate() {
 		if(isSeeking) {
-			if(Vector3.Distance(target.transform.position, this.transform.position) < 10) {
+			if(Vector3.Distance(target.transform.position, this.transform.position) < distanceToSeek) {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
 
-				if(pos.magnitude > 5) {
+				if(pos.magnitude > 2) {
 					this.transform.Translate(0, 0, moveSpeed * Time.deltaTime);
 				}
 			}
