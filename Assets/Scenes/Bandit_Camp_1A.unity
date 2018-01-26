@@ -1558,6 +1558,11 @@ Prefab:
       propertyPath: WaypointParent
       value: 
       objectReference: {fileID: 894453513}
+    - target: {fileID: 135496651835757264, guid: f15002f78ab43ce4fb81398dff7b8474,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f15002f78ab43ce4fb81398dff7b8474, type: 2}
   m_IsPrefabParent: 0
