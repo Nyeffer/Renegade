@@ -22,7 +22,6 @@ public class Player_Detection : MonoBehaviour {
 
 	void Start() {
 		
-		moveSpeed = 1.0f;
 		numOfPoints = WaypointParent.GetChildCount();
 		for(int i = 0; i < numOfPoints; i++) {
 			Waypoints[i] = WaypointParent.GetChild(i).GetComponent<Transform>();

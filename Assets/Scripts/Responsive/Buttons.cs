@@ -22,7 +22,7 @@ public class Buttons : MonoBehaviour {
 	}
 
 	public void PlayAgain() {
-		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
+		SceneManager.LoadScene("Ads", LoadSceneMode.Single);
 	}
 	
 	public void Quit() {
@@ -35,5 +35,9 @@ public class Buttons : MonoBehaviour {
 
 	public void Play() {
 		SceneManager.LoadScene("Testing", LoadSceneMode.Single);
+	}
+
+	public void OnExit() {
+		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
 	}
 }
