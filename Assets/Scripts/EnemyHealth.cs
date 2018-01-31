@@ -50,9 +50,7 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		Debug.Log("Hit");
 		if(col.gameObject.tag == "PlayerObjects" && gameObject.tag == "Enemy") {
-			Debug.Log("Hit");
 			Player_bullet = col.gameObject;
 			TakeDamage(Player_bullet.GetComponent<BulletBehavior>().GetDamage());
 			Destroy(col.gameObject);

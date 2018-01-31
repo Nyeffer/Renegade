@@ -22,7 +22,6 @@ public class Player_Detection : MonoBehaviour {
 
 	void Start() {
 		
-		numOfPoints = WaypointParent.GetChildCount();
 		for(int i = 0; i < numOfPoints; i++) {
 			Waypoints[i] = WaypointParent.GetChild(i).GetComponent<Transform>();
 			Debug.Log(i);
@@ -39,17 +38,7 @@ public class Player_Detection : MonoBehaviour {
 					this.transform.Translate(0, 0, moveSpeed * Time.deltaTime);
 				}
 			}
-		} else {
-			Vector3 pos = Waypoints[counter].position - this.transform.position;
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
-
-			if(pos.magnitude > 2) {
-				counter++;
-				if( counter > Waypoints.Length) {
-					counter = 0;
-				}
-			}
-		}
+		} 
 	}
 
 	void OnTriggerEnter(Collider col) {

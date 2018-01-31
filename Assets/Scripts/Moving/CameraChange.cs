@@ -3,32 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraChange : MonoBehaviour {
-
+	// Variables
 	public bool isFirstPerson;
-	public Transform firstPerson;
-	public Transform thirdPerson;
+	public Transform[] views;
+	public float transitionSpeed;
+	Transform currentView;
 
 	void Start() {
 		isFirstPerson = true;
+		if(isFirstPerson) {
+			currentView = views[0];
+		}
 	}
 
 	void Update() {
-		if(isFirstPerson) {
-			gameObject.transform.position = firstPerson.transform.position;
-			gameObject.transform.rotation = firstPerson.transform.rotation;
-		} else {
-			gameObject.transform.position = thirdPerson.transform.position;
-			gameObject.transform.rotation = thirdPerson.transform.rotation;
-		}
-
-		if(Input.GetKeyDown("space")) {
-			if(isFirstPerson) {
-				isFirstPerson = false;
-			} else {
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			if(!isFirstPerson) {
+				currentView = views[1];
 				isFirstPerson = true;
+			} else {
+				currentView = views[0];
+				isFirstPerson = false;
 			}
 		}
 	}
 
-
+	void LateUpdate() {
+		transform.position = Vector3.Lerp(transform.position, currentView.position, Time.deltaTime * transitionSpeed);
+		Vector3 currentRotation = new Vector3(
+			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
+			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
+			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
+		
+		transform.eulerAngles = currentRotation;
+	}
 }
