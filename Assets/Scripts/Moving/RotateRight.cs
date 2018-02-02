@@ -18,4 +18,16 @@ public class RotateRight : MonoBehaviour {
 	void OnMouseDrag() {
 		Player.transform.Rotate(0, rotSpeed * Time.deltaTime, 0); // Update the Player's Rotation towords the Right
 	}
+
+	void Update() {
+		// Mobile Port of Movement
+		Input.multiTouchEnabled = true;
+		if(Input.touches[0].deltaTime > 0) {
+			Player.transform.Rotate(0, rotSpeed * Input.touches[0].deltaTime, 0); // Update the Player's Rotation towords the Right
+		}
+		// In case if the player touch it second
+		if(Input.touches[1].deltaTime > 0) {
+			Player.transform.Rotate(0, rotSpeed * Input.touches[1].deltaTime, 0); // Update the Player's Rotation towords the Right
+		}
+	}
 }

@@ -17,5 +17,17 @@ public class MoveBackward : MonoBehaviour {
 	void OnMouseDrag() {
 		Player.transform.Translate(0, 0, -moveSpeed * Time.deltaTime); // Update the Player's Position to move backward
 	}
+
+	void Update() {
+			// Mobile Port of Movement
+				Input.multiTouchEnabled = true;
+				if(Input.touches[0].deltaTime > 0) {
+					Player.transform.Translate(0, -moveSpeed * Input.touches[0].deltaTime, 0); // Update the Player's Position to move Backward
+				// In case if the player touch it second
+				if(Input.touches[1].deltaTime > 0) {
+					Player.transform.Translate(0, -moveSpeed * Input.touches[1].deltaTime, 0); // Update the Player's Position to move ward
+			}
+		}
+	}
 	
 }

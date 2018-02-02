@@ -27,4 +27,23 @@ public class Shoot : MonoBehaviour {
 			Instantiate(bullet, nuzzle.transform.position, nuzzle.transform.rotation); // Spawns the Bullet with both the Nuzzle's Position and Rotation
 		}
 	}
+
+
+	void Update() {
+		// Mobile Port of Movement
+		Input.multiTouchEnabled = true;
+			if(Input.touches[0].deltaTime > 0) {
+				if(Time.time - lastFired > 1/fireRate) {
+					lastFired = Time.time;
+					Instantiate(bullet, nuzzle.transform.position, nuzzle.transform.rotation); // Spawns the Bullet with both the Nuzzle's Position and Rotation
+				}
+				// In case if the player touch it second
+			if(Input.touches[1].deltaTime > 0) {
+				if(Time.time - lastFired > 1/fireRate) {
+					lastFired = Time.time;
+					Instantiate(bullet, nuzzle.transform.position, nuzzle.transform.rotation); // Spawns the Bullet with both the Nuzzle's Position and Rotation
+				}
+			}
+		}
+	}
 }
