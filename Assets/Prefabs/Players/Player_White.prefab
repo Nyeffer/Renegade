@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23688443482862894}
   - component: {fileID: 54714986495274942}
   - component: {fileID: 114792728526352706}
+  - component: {fileID: 114709403247762370}
   m_Layer: 0
   m_Name: Player_White
   m_TagString: Player
@@ -216,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1464084936684862
 GameObject:
   m_ObjectHideFlags: 1
@@ -281,7 +282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1737583035820162
 GameObject:
   m_ObjectHideFlags: 1
@@ -385,7 +386,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1021597804873294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.7, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4613452612209898}
@@ -926,6 +927,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1021597804873294}
   rotSpeed: 150
+--- !u!114 &114709403247762370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1021597804873294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a920ef2c30d4c143a68966d1316e8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  rotSpeed: 0
+  Stamina: 10
+  controls: {fileID: 0}
+  staminaBar: {fileID: 0}
 --- !u!114 &114792728526352706
 MonoBehaviour:
   m_ObjectHideFlags: 1
