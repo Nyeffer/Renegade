@@ -8,21 +8,30 @@ public class RotatePlayer : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoi
 
 	private Image bgImg;
 	private Image joystickImg;
-	public GameObject joystick;
 	public GameObject player;
+	private Move movement;
+
+	public float moveSpeed = 3.0f;
+	public float rotSpeed = 150.0f;
 
 	public Vector3 InputDirection { set; get; }
 	private void Start() {
 		bgImg = GetComponent<Image>();
 		joystickImg = transform.GetChild(0).GetComponent<Image>();
 		InputDirection = Vector3.zero;
+		movement = player.GetComponent<Move>();
 	}
 
 
 	void Update() {
-		player.transform.Rotate(0, InputDirection.x * (150.0f * Time.deltaTime), 0);
-		joystick.transform.Rotate(0, 0, InputDirection.x * (150.0f * Time.deltaTime));
-
+		if(InputDirection.x > 0) {
+			Debug.Log("MovingF");
+			movement.RotateRight(new Vector2(InputDirection.x, InputDirection.z), rotSpeed);
+		}
+		if(InputDirection.x < 0) {
+			Debug.Log("MovingF");
+			movement.RotateLeft(new Vector2(InputDirection.x, InputDirection.z), rotSpeed);
+		}
 	}
 
 
@@ -34,18 +43,17 @@ public class RotatePlayer : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoi
 			ped.pressEventCamera,
 			out pos)) {
 				pos.x = (pos.x / bgImg.rectTransform.sizeDelta.x);
-				pos.y = (pos.y / bgImg.rectTransform.sizeDelta.y);
+				// pos.y = (pos.y / bgImg.rectTransform.sizeDelta.y);
 
 				float x = (bgImg.rectTransform.pivot.x == 1) ? pos.x * 2 + 1 : pos.x * 2 - 1;
-				float y = (bgImg.rectTransform.pivot.y == 1) ? pos.y * 2 + 1 : pos.y * 2 - 1;
+				// float y = (bgImg.rectTransform.pivot.y == 1) ? pos.y * 2 + 1 : pos.y * 2 - 1;
 				
-				InputDirection = new Vector3(x, 0, y);
+				InputDirection = new Vector3(x, 0, 0);
 
 				InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
 				joystickImg.rectTransform.anchoredPosition = new Vector3 (InputDirection.x * (bgImg.rectTransform.sizeDelta.x /3),
 				InputDirection.z * (bgImg.rectTransform.sizeDelta.y /3));
 		}
-		player.transform.LookAt(player.transform);
 	}
 
 	public virtual void OnPointerDown(PointerEventData ped) {

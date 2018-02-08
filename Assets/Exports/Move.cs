@@ -21,36 +21,57 @@ public class Move : MonoBehaviour
         staminaBar.maxValue = 10;
         isSprinting = false;
     }
-    void Update()	{
-        Vector3 direction = Vector3.zero;
-        if(controls.InputDirection != Vector3.zero) {
-            direction = controls.InputDirection;
+
+    public void MoveForward(Vector3 direction, float moveSpeed) {
+        if(isSprinting) {
+            gameObject.transform.Translate(direction * (Time.deltaTime * moveSpeed * 2));
+        } else {
+            gameObject.transform.Translate(direction * (Time.deltaTime * moveSpeed));
         }
+    }
 
-        // gameObject.transform.position += (direction * (Time.deltaTime * moveSpeed));
-        // gameObject.transform.Rotate(0, direction.x * (rotSpeed * Time.deltaTime), 0);
-        // if(gameObject.transform.rotation.y > 180.0f) {
-        //     gameObject.transform.Rotate(0, gameObject.transform.rotation.y, 0);
-        // }
+    public void MoveBackward(Vector3 direction, float moveSpeed) {
+       if(isSprinting) {
+            gameObject.transform.Translate(-direction * (Time.deltaTime * moveSpeed * 2));
+        } else {
+            gameObject.transform.Translate(-direction * (Time.deltaTime * moveSpeed));
+        }
+    }
 
-        // var x = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        // var z = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        // var rot = Input.GetAxis("Turn") * Time.deltaTime * rotSpeed;
-        // if(Input.GetKey(KeyCode.LeftShift)) {
-        //     if(Stamina > 0) {
-        //         isSprinting = true;
-        //         z = Input.GetAxis("Vertical") * Time.deltaTime * (moveSpeed + sprintSpeed);
-        //         Stamina -= Time.deltaTime;
-        //     }
-        // } else {
-        //     isSprinting = false;
-        // }
-        // if (!isSprinting && Stamina < 10) {
-        //     Stamina += Time.deltaTime * 0.5f;
-        // }
-        // staminaBar.value = Stamina;
-        // transform.Rotate(0, rot, 0);
-        // transform.Translate(x, 0, 0);
-        // transform.Translate(0, 0, z);
+    public void MoveRight(Vector3 direction, float moveSpeed) {
+        if(isSprinting) {
+            gameObject.transform.Translate(direction * (Time.deltaTime * moveSpeed * 2));
+        } else {
+            gameObject.transform.Translate(direction * (Time.deltaTime * moveSpeed));
+        }
+    }
+
+    public void MoveLeft(Vector3 direction, float moveSpeed) {
+        if(isSprinting) {
+            gameObject.transform.Translate(-direction * (Time.deltaTime * moveSpeed * 2));
+        } else {
+            gameObject.transform.Translate(-direction * (Time.deltaTime * moveSpeed));
+        }
+    }
+
+    public void RotateLeft(Vector2 direction, float rotSpeed) {
+        gameObject.transform.Rotate(0, direction.x * (rotSpeed * Time.deltaTime), 0);
+    }
+
+    public void RotateRight(Vector2 direction, float rotSpeed) {
+        gameObject.transform.Rotate(0, direction.x * (rotSpeed * Time.deltaTime), 0);
+    }
+
+    public void Sprint(bool NowOrNot) {      
+            SetisSprinting(NowOrNot);
+    }
+
+    public bool GetisSprinting() {
+        return isSprinting;
+    }
+
+
+    public void SetisSprinting(bool NowSprint) {
+        isSprinting = NowSprint;
     }
 }
