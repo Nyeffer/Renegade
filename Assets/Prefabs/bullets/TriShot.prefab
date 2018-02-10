@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 54048526449076250}
   m_Layer: 0
   m_Name: Bullet_TriShot (2)
-  m_TagString: Untagged
+  m_TagString: PlayerObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 54708069343608608}
   m_Layer: 0
   m_Name: Bullet_TriShot (1)
-  m_TagString: Untagged
+  m_TagString: PlayerObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 54512067108309210}
   m_Layer: 0
   m_Name: Bullet_TriShot
-  m_TagString: Untagged
+  m_TagString: PlayerObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,6 +342,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   timeTillDestroy: 1
   moveSpeed: 6
+  damage: 10
 --- !u!114 &114456148040731668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,6 +357,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   timeTillDestroy: 1
   moveSpeed: 6
+  damage: 10
 --- !u!114 &114495450127839778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -370,6 +372,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   timeTillDestroy: 1
   moveSpeed: 6
+  damage: 10
 --- !u!135 &135121913637671014
 SphereCollider:
   m_ObjectHideFlags: 1
