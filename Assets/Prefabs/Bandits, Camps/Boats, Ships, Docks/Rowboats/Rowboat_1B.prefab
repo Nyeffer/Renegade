@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 456914}
   - component: {fileID: 3391986}
   - component: {fileID: 2369452}
-  - component: {fileID: 6404210}
+  - component: {fileID: 65483133166082186}
   m_Layer: 0
   m_Name: Rowboat_1B
   m_TagString: Untagged
@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165544}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4000392, y: -0.28377134, z: -0.8759564}
+  m_LocalRotation: {x: 0.012061711, y: -0.23245062, z: -0.08761018, w: 0.96857923}
+  m_LocalPosition: {x: 422.26785, y: 2.4674902, z: 259.61923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70,20 +70,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165544}
   m_Mesh: {fileID: 4300006, guid: 1930a0dafafea0748ae7aef658f701f9, type: 3}
---- !u!64 &6404210
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165544}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300006, guid: 1930a0dafafea0748ae7aef658f701f9, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -95,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165544}
   m_IsPrefabParent: 1
+--- !u!65 &65483133166082186
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.1082535, z: 5.99}
+  m_Center: {x: -8.522649e-11, y: 0.015251874, z: 0.33069718}

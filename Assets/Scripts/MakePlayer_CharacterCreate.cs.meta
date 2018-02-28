@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 98453aa62023ede43bef9fe94076bab2
+timeCreated: 1519345858
+licenseType: Pro
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hair_1: {fileID: 4300022, guid: 2112854f9c1e1bd4abf766d44f57f570, type: 3}
+  - hair_2: {fileID: 4300006, guid: 1930a0dafafea0748ae7aef658f701f9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

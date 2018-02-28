@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 421402}
   - component: {fileID: 3328882}
   - component: {fileID: 2366516}
-  - component: {fileID: 6475580}
+  - component: {fileID: 65616897185740662}
   m_Layer: 0
   m_Name: Dock_1C2
   m_TagString: Untagged
@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164812}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.63, y: -5.5, z: -5.07}
+  m_LocalRotation: {x: 0, y: 0.22980753, z: 0, w: 0.9732361}
+  m_LocalPosition: {x: 421.79, y: 2.82, z: 249.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70,20 +70,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164812}
   m_Mesh: {fileID: 4300012, guid: 3dac446bd5b8eb242ae16c3eba20bab2, type: 3}
---- !u!64 &6475580
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164812}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300012, guid: 3dac446bd5b8eb242ae16c3eba20bab2, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -95,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164812}
   m_IsPrefabParent: 1
+--- !u!65 &65616897185740662
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.29, y: 4.0000005, z: 8.4}
+  m_Center: {x: 0, y: -0.8234189, z: 0.00000023841858}

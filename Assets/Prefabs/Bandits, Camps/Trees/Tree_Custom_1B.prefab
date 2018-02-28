@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3309598}
   - component: {fileID: 2374672}
   m_Layer: 0
-  m_Name: Tree_Leaves_1C 4
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &103036
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,12 +28,12 @@ GameObject:
   - component: {fileID: 3367602}
   - component: {fileID: 2307250}
   m_Layer: 0
-  m_Name: Tree_Leaves_1A 4
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &126222
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,12 +46,12 @@ GameObject:
   - component: {fileID: 2326680}
   - component: {fileID: 13604506}
   m_Layer: 0
-  m_Name: Dead_Tree_1B
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &134780
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,12 +63,12 @@ GameObject:
   - component: {fileID: 3337756}
   - component: {fileID: 2304018}
   m_Layer: 0
-  m_Name: Tree_Leaves_1C 2
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154062
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,12 +80,12 @@ GameObject:
   - component: {fileID: 3335620}
   - component: {fileID: 2330364}
   m_Layer: 0
-  m_Name: Tree_Leaves_1A
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154288
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,12 +97,12 @@ GameObject:
   - component: {fileID: 3326640}
   - component: {fileID: 2348952}
   m_Layer: 0
-  m_Name: Tree_Leaves_1C 3
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &185664
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,12 +129,12 @@ GameObject:
   - component: {fileID: 3361338}
   - component: {fileID: 2384030}
   m_Layer: 0
-  m_Name: Tree_Leaves_1A 1
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &406410
 Transform:
   m_ObjectHideFlags: 1

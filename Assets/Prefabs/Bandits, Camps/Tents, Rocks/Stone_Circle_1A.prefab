@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 482168}
   - component: {fileID: 3329810}
   - component: {fileID: 2312688}
-  - component: {fileID: 6466414}
+  - component: {fileID: 65641085295054036}
   m_Layer: 0
   m_Name: Stone_Circle_1A
   m_TagString: Untagged
@@ -24,9 +24,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.6, y: -10.1, z: -9.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.29034624, z: 0, w: 0.9569217}
+  m_LocalPosition: {x: 349.21045, y: 15.154, z: 309.6257}
+  m_LocalScale: {x: 1, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,20 +70,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125458}
   m_Mesh: {fileID: 4300020, guid: 8bae722f399cdce448b007d545d379f8, type: 3}
---- !u!64 &6466414
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300020, guid: 8bae722f399cdce448b007d545d379f8, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -95,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125458}
   m_IsPrefabParent: 1
+--- !u!65 &65641085295054036
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1586628, y: 0.41788024, z: 3.0071075}
+  m_Center: {x: 0.020983815, y: 0.043111116, z: -0.019919395}
