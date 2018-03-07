@@ -22347,7 +22347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   curHealth: 0
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 1959891130}
 --- !u!54 &1326421202
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33121,6 +33121,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29526a4fa427e3e40988e00e2a4256f8, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1959891130 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114407705548993804, guid: 4f18a8508b74fd944a51497e71458142,
+    type: 2}
+  m_PrefabInternal: {fileID: 1318816195}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1960605531
 Prefab:
   m_ObjectHideFlags: 0

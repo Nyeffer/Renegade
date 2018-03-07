@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour {
 
 	public int maxHealth = 100;
-	public int curHealth;
+	public float curHealth;
 	public Slider hpBar;
 
 	bool isDead;
@@ -18,16 +18,10 @@ public class PlayerHealth : MonoBehaviour {
 		TakeDamage(0);
 	}
 
-	void Update() {
-		if(isDamaged) {
-			// Do Something
-		} else {
-			// Do Something else
-		} 
-		isDamaged = false;
+	void Update() {	
 	}
 
-	public void TakeDamage(int damageDealt) {
+	public void TakeDamage(float damageDealt) {
 		isDamaged = true;
 		curHealth -= damageDealt;
 		hpBar.value = curHealth;

@@ -7,11 +7,13 @@ public class Player_Detection : MonoBehaviour {
 	private Rigidbody rigidbody;
 	public Vector3 velocity;
 	public bool isSeeking;
+	public int damage = 10;
 	public float moveSpeed;
 	private Transform[] Waypoints;
 	public Transform WaypointParent;
 	private int numOfPoints;
-	int counter = 0;
+	float counter = 0;
+	private bool isDamaging = false;
 
 	public float distanceToSeek = 10;
 
@@ -33,12 +35,29 @@ public class Player_Detection : MonoBehaviour {
 			if(Vector3.Distance(target.transform.position, this.transform.position) < distanceToSeek) {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
-
-				if(pos.magnitude > 2) {
-					this.transform.Translate(0, 0, moveSpeed * Time.deltaTime);
+				if (!isDamaging) {
+					if (pos.magnitude > 3) {
+						this.transform.Translate (0, 0, moveSpeed * Time.deltaTime);
+					} else {
+						isDamaging = true;
+						if (pos.magnitude <= 2.5f) {
+							target.GetComponent<PlayerHealth> ().TakeDamage ((int)damage * Time.deltaTime);
+						}
+					} 
+				} else {
+					if (counter >= 2) {
+						counter = 0;
+						isDamaging = false;
+					} else {
+						this.transform.Translate (0, 0, (moveSpeed * 0) * Time.deltaTime);
+						if (pos.magnitude <= 2.5f) {
+							target.GetComponent<PlayerHealth> ().TakeDamage ((int)damage * Time.deltaTime);
+						}
+						counter += Time.deltaTime;
+					}
 				}
-			}
-		} 
+			} 
+		}
 	}
 
 	void OnTriggerEnter(Collider col) {
