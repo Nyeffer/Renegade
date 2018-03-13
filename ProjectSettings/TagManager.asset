@@ -8,6 +8,7 @@ TagManager:
   - PlayerObjects
   - EnemyObjects
   - Controls
+  - Detection
   layers:
   - Default
   - TransparentFX
