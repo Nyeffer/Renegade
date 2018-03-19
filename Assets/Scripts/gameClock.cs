@@ -21,7 +21,11 @@ public class gameClock : MonoBehaviour {
 		if(secs <= 0) {
 			Application.Quit();
 		}
-		myText.text = " " + mins.ToString()  +  " : "  + ((int)realSec).ToString();
+		if (realSec < 10.0f) {
+			myText.text = " " + mins.ToString()  +  " : 0"  + ((int)realSec).ToString();
+		} else {
+			myText.text = " " + mins.ToString()  +  " : "  + ((int)realSec).ToString();
+		}
 	}
 		
 }

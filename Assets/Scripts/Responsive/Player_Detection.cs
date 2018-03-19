@@ -15,11 +15,12 @@ public class Player_Detection : MonoBehaviour {
 	float counter = 0;
 	private bool isDamaging = false;
 
-	public float distanceToSeek = 10;
+	private float distanceToSeek;
 
 	void Awake() {
 		rigidbody = GetComponent<Rigidbody>();
 		velocity = rigidbody.velocity;
+		distanceToSeek = GetComponent<SphereCollider> ().radius;
 	}
 
 	void Start() {
@@ -36,7 +37,7 @@ public class Player_Detection : MonoBehaviour {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
 				if (!isDamaging) {
-					if (pos.magnitude > 3) {
+					if (pos.magnitude > 2.5f) {
 						this.transform.Translate (0, 0, moveSpeed * Time.deltaTime);
 					} else {
 						isDamaging = true;
@@ -66,4 +67,18 @@ public class Player_Detection : MonoBehaviour {
 			isSeeking = true;	
 		}
 	}
+
+	void OnTriggerStay(Collider col) {
+		if(col.gameObject.tag == "Player") {
+			target = col.gameObject;
+			isSeeking = true;	
+		}
+	}
+
+	void OnTriggerExit(Collider col) {
+		if (col.gameObject.tag == "Player") {
+			target = null;
+			isSeeking = false;
+		}
+ 	}
 }

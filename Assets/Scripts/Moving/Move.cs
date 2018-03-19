@@ -15,8 +15,6 @@ public class Move : MonoBehaviour
     public Slider staminaBar;
 
     void Start() {
-        moveSpeed = 3.0f;
-        rotSpeed = 150.0f;
         sprintSpeed = 3;
         staminaBar.maxValue = 10;
         isSprinting = false;
