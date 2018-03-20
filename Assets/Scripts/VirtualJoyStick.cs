@@ -10,9 +10,11 @@ public class VirtualJoyStick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 	private Image joystickImg; // The Joystick that'll move
 	public GameObject player; // Player Constructor
 	private Move movement; // Constructor of the Move script
+	private Animator anim; // Constructor of the Animator
 
 	public float moveSpeed = 3.0f; // Movespeed - customable
 	public float rotSpeed = 150.0f; // Rotatespeed - customable
+	public bool isWalking;
 
 	public Vector3 InputDirection { set; get; } // Constructor of the Direction from the Joystick
 	private void Start() {
@@ -20,22 +22,28 @@ public class VirtualJoyStick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 		joystickImg = transform.GetChild(0).GetComponent<Image>(); // Initializing the Joystick from the first child
 		InputDirection = Vector3.zero; // Initializing the Direction to zero
 		movement = player.GetComponent<Move>(); // Initializing Move Script from the player
+		anim = player.GetComponent<Animator>(); // Initializing Animator
+		isWalking = false;
 	}
 
 	void Update() {
 		// Checking the Direction of the Joystick
-		if(InputDirection.z > 0) { // Check if it's Up
-			movement.MoveForward(Vector3.forward, moveSpeed); // Move Forward where the player is looking
-		}
-		if(InputDirection.z < 0) { // Check if it's Down
-			movement.MoveBackward(Vector3.forward, moveSpeed); // Move Backward that's directly behind the player
+		if (InputDirection.z > 0) { // Check if it's Up
+			movement.MoveForward (Vector3.forward, moveSpeed); // Move Forward where the player is looking
 		} 
-		if(InputDirection.x > 0.5) { // Check if it's Right
-			movement.MoveRight(Vector3.right, moveSpeed); // Move directly to the Right 
+		if (InputDirection.z < 0) { // Check if it's Down
+			movement.MoveBackward (Vector3.forward, moveSpeed); // Move Backward that's directly behind the player
+		} 
+		if (InputDirection.x > 0.5) { // Check if it's Right
+			movement.MoveRight (Vector3.right, moveSpeed); // Move directly to the Right 
 		}
-		if(InputDirection.x < -0.5) { // Check if it's Left
-			movement.MoveLeft(Vector3.right, moveSpeed); // Move directly to the Left
+		if (InputDirection.x < -0.5) { // Check if it's Left
+			movement.MoveLeft (Vector3.right, moveSpeed); // Move directly to the Left
 		}
+	}
+
+	void FixedUpdate() {
+		anim.SetBool ("isWalking", isWalking); // Update the State of isWalking from the Animator Controller
 	}
 
 	public virtual void OnDrag(PointerEventData ped) {
@@ -62,10 +70,12 @@ public class VirtualJoyStick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 
 	public virtual void OnPointerDown(PointerEventData ped) {
 		OnDrag(ped); // Call upon touch
+		isWalking = true; // Start the Walking animation
 	}
 
 	public virtual void OnPointerUp(PointerEventData ped) {
 		InputDirection = Vector3.zero; // Reset the InputDirection
 		joystickImg.rectTransform.anchoredPosition = Vector3.zero; // Reset the position of the Joystick
+		isWalking = false; // Change the state of IsWalkiing to false to stop the Walking animation
 	}
 }
