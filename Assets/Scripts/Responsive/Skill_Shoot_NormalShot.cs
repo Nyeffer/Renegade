@@ -19,7 +19,6 @@ public class Skill_Shoot_NormalShot : MonoBehaviour, IPointerDownHandler, IPoint
 
 	void Start() {
 		notSkillActive = gameObject.GetComponent<Image>().color;
-		// skillUsing = GetComponent<Image>().color;
 	}
 	void Update() {
 		if(isFiring) {
@@ -35,7 +34,7 @@ public class Skill_Shoot_NormalShot : MonoBehaviour, IPointerDownHandler, IPoint
 		}
 	}
 	public virtual void OnPointerDown(PointerEventData ped) {
-		gameObject.GetComponent<Image>().color = skillUsing;
+		// gameObject.GetComponent<Image>().color = skillUsing;
 	}
 
 	public virtual void OnPointerUp(PointerEventData ped) {

@@ -10,25 +10,24 @@ public class CameraChange : MonoBehaviour {
 	Transform currentView;
 
 	void Start() {
-		isFirstPerson = true;
-		if(isFirstPerson) {
+		if (!isFirstPerson) {
+			currentView = views [0];
+		} else {
+			currentView = views [1];
+		}
+	}
+
+	public void CamChange() {
+		if(!isFirstPerson) {
+			currentView = views[1];
+			isFirstPerson = true;
+		} else {
 			currentView = views[0];
+			isFirstPerson = false;
 		}
 	}
 
 	void Update() {
-		if(Input.GetKeyDown(KeyCode.Space)) {
-			if(!isFirstPerson) {
-				currentView = views[1];
-				isFirstPerson = true;
-			} else {
-				currentView = views[0];
-				isFirstPerson = false;
-			}
-		}
-	}
-
-	void LateUpdate() {
 		transform.position = Vector3.Lerp(transform.position, currentView.position, Time.deltaTime * transitionSpeed);
 		Vector3 currentRotation = new Vector3(
 			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
