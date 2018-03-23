@@ -9,6 +9,8 @@ TagManager:
   - EnemyObjects
   - Controls
   - Detection
+  - Shooting
+  - NoneShooting
   layers:
   - Default
   - TransparentFX

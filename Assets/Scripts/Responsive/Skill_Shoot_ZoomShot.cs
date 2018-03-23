@@ -11,17 +11,26 @@ public class Skill_Shoot_ZoomShot : MonoBehaviour, IPointerDownHandler, IPointer
 	public const int skillValue = 1; // Number that's gonna be used in Character Creation
 	Color notSkillActive; // Color to reset the Color
 	public GameObject Cam; // Camera to give us access to it
-	private bool isActive = false;
+	private bool isActive = false;  // Check if the Skill is active or Not
+	public GameObject DirectionControls; // Deactivate everytime Zoom is Active
+	public GameObject ShootingButton; // Will shoot empower shots
 
 	void Start() {
 		notSkillActive = gameObject.GetComponent<Image>().color;
+		DirectionControls.SetActive(true);
+		ShootingButton.SetActive(false);
+
 	}
 
 	void Update() {
 		if (isActive) {
 			gameObject.GetComponent<Image> ().color = skillUsing;
+			DirectionControls.SetActive(false);
+			ShootingButton.SetActive(true);
 		} else {
 			gameObject.GetComponent<Image> ().color = notSkillActive;
+			DirectionControls.SetActive(true);
+			ShootingButton.SetActive(false);
 		}	
 	}
 
@@ -37,7 +46,11 @@ public class Skill_Shoot_ZoomShot : MonoBehaviour, IPointerDownHandler, IPointer
 		}
 	}
 
-	void SetisActive(bool activate) {
+	public bool GetisActive	() {
+		return isActive;
+	}
+
+	public void SetisActive(bool activate) {
 		isActive = activate;		
 	}
 		
