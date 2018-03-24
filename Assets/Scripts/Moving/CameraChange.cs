@@ -19,21 +19,36 @@ public class CameraChange : MonoBehaviour {
 
 	public void CamChange() {
 		if(!isFirstPerson) {
-			currentView = views[1];
-			isFirstPerson = true;
+			ZoomOut();
 		} else {
-			currentView = views[0];
-			isFirstPerson = false;
+			ZoomIn();
+
 		}
 	}
 
 	void Update() {
-		transform.position = Vector3.Lerp(transform.position, currentView.position, Time.deltaTime * transitionSpeed);
+		CamChange();
+	}
+
+	public void ZoomIn() {
+		transform.position = Vector3.Lerp(transform.position, views[0].position, Time.deltaTime * transitionSpeed);
 		Vector3 currentRotation = new Vector3(
 			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
 			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
 			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
-		
+
 		transform.eulerAngles = currentRotation;
+		isFirstPerson = true;
+	}
+
+	public void ZoomOut() {
+		transform.position = Vector3.Lerp(transform.position, views[1].position, Time.deltaTime * transitionSpeed);
+		Vector3 currentRotation = new Vector3(
+			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
+			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
+			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
+
+		transform.eulerAngles = currentRotation;
+		isFirstPerson = false;
 	}
 }

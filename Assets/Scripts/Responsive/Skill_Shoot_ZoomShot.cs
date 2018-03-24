@@ -19,7 +19,7 @@ public class Skill_Shoot_ZoomShot : MonoBehaviour, IPointerDownHandler, IPointer
 		notSkillActive = gameObject.GetComponent<Image>().color;
 		DirectionControls.SetActive(true);
 		ShootingButton.SetActive(false);
-
+		Cam.GetComponent<CameraChange>().ZoomOut();
 	}
 
 	void Update() {
@@ -27,22 +27,24 @@ public class Skill_Shoot_ZoomShot : MonoBehaviour, IPointerDownHandler, IPointer
 			gameObject.GetComponent<Image> ().color = skillUsing;
 			DirectionControls.SetActive(false);
 			ShootingButton.SetActive(true);
+			Cam.GetComponent<CameraChange>().ZoomOut();
 		} else {
 			gameObject.GetComponent<Image> ().color = notSkillActive;
 			DirectionControls.SetActive(true);
 			ShootingButton.SetActive(false);
+			Cam.GetComponent<CameraChange>().ZoomIn();
 		}	
 	}
 
 	public virtual void OnPointerDown(PointerEventData ped) {
-		Cam.GetComponent<CameraChange>().CamChange();
+		
 	}
 
 	public virtual void OnPointerUp(PointerEventData ped) {
-		if (!isActive) {
-			SetisActive (true);
+		if(isActive) {
+			SetisActive(false);
 		} else {
-			SetisActive (false);
+			SetisActive(true);
 		}
 	}
 
@@ -51,7 +53,10 @@ public class Skill_Shoot_ZoomShot : MonoBehaviour, IPointerDownHandler, IPointer
 	}
 
 	public void SetisActive(bool activate) {
-		isActive = activate;		
+		if(activate == true) {
+		}
+		isActive = activate;
+
 	}
 		
 }

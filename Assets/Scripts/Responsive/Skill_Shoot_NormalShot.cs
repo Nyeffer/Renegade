@@ -45,9 +45,10 @@ public class Skill_Shoot_NormalShot : MonoBehaviour, IPointerDownHandler, IPoint
 		}
 	}
 
-	public void SetisActive(bool FireorNot) {
-		isActive = FireorNot;
+	public void SetisActive(bool activate) {
+		isActive = activate;		
 	}
+
 	public bool GetisActive() {
 		return isActive;
 	}
