@@ -10,31 +10,45 @@ public class CameraChange : MonoBehaviour {
 	Transform currentView;
 
 	void Start() {
-		isFirstPerson = true;
-		if(isFirstPerson) {
-			currentView = views[0];
+		if (!isFirstPerson) {
+			currentView = views [0];
+		} else {
+			currentView = views [1];
+		}
+	}
+
+	public void CamChange() {
+		if(!isFirstPerson) {
+			ZoomOut();
+		} else {
+			ZoomIn();
+
 		}
 	}
 
 	void Update() {
-		if(Input.GetKeyDown(KeyCode.Space)) {
-			if(!isFirstPerson) {
-				currentView = views[1];
-				isFirstPerson = true;
-			} else {
-				currentView = views[0];
-				isFirstPerson = false;
-			}
-		}
+		CamChange();
 	}
 
-	void LateUpdate() {
-		transform.position = Vector3.Lerp(transform.position, currentView.position, Time.deltaTime * transitionSpeed);
+	public void ZoomIn() {
+		transform.position = Vector3.Lerp(transform.position, views[0].position, Time.deltaTime * transitionSpeed);
 		Vector3 currentRotation = new Vector3(
 			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
 			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
 			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
-		
+
 		transform.eulerAngles = currentRotation;
+		isFirstPerson = true;
+	}
+
+	public void ZoomOut() {
+		transform.position = Vector3.Lerp(transform.position, views[1].position, Time.deltaTime * transitionSpeed);
+		Vector3 currentRotation = new Vector3(
+			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
+			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
+			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
+
+		transform.eulerAngles = currentRotation;
+		isFirstPerson = false;
 	}
 }

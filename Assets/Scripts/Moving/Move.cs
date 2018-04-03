@@ -12,11 +12,9 @@ public class Move : MonoBehaviour
 
     public VirtualJoyStick controls;
 
-    public Slider staminaBar;
 
     void Start() {
         sprintSpeed = 3;
-        staminaBar.maxValue = 10;
         isSprinting = false;
     }
 

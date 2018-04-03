@@ -1,0 +1,45 @@
+newmtl blinn1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sword.png
+bump Sword_NormalMap.png -bm 1.680498
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl pCube4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+bump Shoulders_armor_NormalMap.png -bm 0.726141
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd UV_Basemesh_Male.jpg
+bump UV_Basemesh_Male_NormalMap.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl phongE2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd UV_Basemesh_Male.jpg
+bump UV_Basemesh_Male_NormalMap.png -bm 1
+Ni 0.95
+Ks 0.25 0.25 0.25
+newmtl phongE3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hair.jpg
+bump hair_NormalMap.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50

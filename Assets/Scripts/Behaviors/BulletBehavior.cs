@@ -23,4 +23,8 @@ public class BulletBehavior : MonoBehaviour {
         return damage;
     }
 
+    public void SetDamage(int desiredDamage) {
+        damage = desiredDamage;
+    }
+
 }
