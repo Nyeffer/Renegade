@@ -1,0 +1,1262 @@
+fileFormatVersion: 2
+guid: 9a2855de3c454634d856d86f81f68e91
+timeCreated: 1522883390
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: T_Magic_Particles_0
+    21300002: T_Magic_Particles_1
+    21300004: T_Magic_Particles_2
+    21300006: T_Magic_Particles_3
+    21300008: T_Magic_Particles_4
+    21300010: T_Magic_Particles_5
+    21300012: T_Magic_Particles_6
+    21300014: T_Magic_Particles_7
+    21300016: T_Magic_Particles_8
+    21300018: T_Magic_Particles_9
+    21300020: T_Magic_Particles_10
+    21300022: T_Magic_Particles_11
+    21300024: T_Magic_Particles_12
+    21300026: T_Magic_Particles_13
+    21300028: T_Magic_Particles_14
+    21300030: T_Magic_Particles_15
+    21300032: T_Magic_Particles_16
+    21300034: T_Magic_Particles_17
+    21300036: T_Magic_Particles_18
+    21300038: T_Magic_Particles_19
+    21300040: T_Magic_Particles_20
+    21300042: T_Magic_Particles_21
+    21300044: T_Magic_Particles_22
+    21300046: T_Magic_Particles_23
+    21300048: T_Magic_Particles_24
+    21300050: T_Magic_Particles_25
+    21300052: T_Magic_Particles_26
+    21300054: T_Magic_Particles_27
+    21300056: T_Magic_Particles_28
+    21300058: T_Magic_Particles_29
+    21300060: T_Magic_Particles_30
+    21300062: T_Magic_Particles_31
+    21300064: T_Magic_Particles_32
+    21300066: T_Magic_Particles_33
+    21300068: T_Magic_Particles_34
+    21300070: T_Magic_Particles_35
+    21300072: T_Magic_Particles_36
+    21300074: T_Magic_Particles_37
+    21300076: T_Magic_Particles_38
+    21300078: T_Magic_Particles_39
+    21300080: T_Magic_Particles_40
+    21300082: T_Magic_Particles_41
+    21300084: T_Magic_Particles_42
+    21300086: T_Magic_Particles_43
+    21300088: T_Magic_Particles_44
+    21300090: T_Magic_Particles_45
+    21300092: T_Magic_Particles_46
+    21300094: T_Magic_Particles_47
+    21300096: T_Magic_Particles_48
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Magic_Particles_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1949
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1984
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1947
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_3
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1782
+        width: 84
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_4
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1540
+        width: 488
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_5
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1272
+        width: 508
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1869
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_7
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1877
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1771
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1768
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1655
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_11
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1661
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1569
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1549
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1569
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1030
+        width: 514
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_16
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1281
+        width: 88
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_17
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1074
+        width: 144
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_18
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1070
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 985
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_20
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 991
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_21
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 981
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_22
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 993
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_23
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 528
+        width: 481
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_24
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 539
+        width: 478
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_25
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 967
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_26
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 987
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 555
+        width: 425
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_28
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 825
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_29
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 809
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_30
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 801
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_31
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 785
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_32
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 789
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_33
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 785
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_34
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 767
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_35
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 765
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_36
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 765
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_37
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 757
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_38
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 735
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_39
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 757
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_40
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 745
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 723
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_42
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 739
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_43
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 733
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_44
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 725
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 715
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_46
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 713
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_47
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 699
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: T_Magic_Particles_48
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 689
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: 410, y: -24}
+      - {x: 346, y: -12}
+      - {x: 134, y: -12}
+      - {x: 54, y: -44}
+      - {x: 12, y: -172}
+      - {x: 12, y: -364}
+      - {x: 64, y: -436}
+      - {x: 168, y: -500}
+      - {x: 320, y: -500}
+      - {x: 418, y: -476}
+      - {x: 500, y: -342}
+      - {x: 500, y: -198}
+      - {x: 482, y: -114}
+    - - {x: -228, y: -474}
+      - {x: -212, y: -488}
+      - {x: -130, y: -488}
+      - {x: -122, y: -482}
+      - {x: -122, y: -474}
+      - {x: -122, y: -478}
+      - {x: -118, y: -482}
+      - {x: -114, y: -482}
+      - {x: -110, y: -478}
+      - {x: -110, y: -460}
+      - {x: -110, y: -472}
+      - {x: -108, y: -478}
+      - {x: -84, y: -476}
+      - {x: -82, y: -470}
+      - {x: -64, y: -444}
+      - {x: -70, y: -424}
+      - {x: -76, y: -428}
+      - {x: -80, y: -432}
+      - {x: -78, y: -426}
+      - {x: -62, y: -420}
+      - {x: -6, y: -336}
+      - {x: -12, y: -314}
+      - {x: -14, y: -312}
+      - {x: -10, y: -314}
+      - {x: -4, y: -316}
+      - {x: 0, y: -306}
+      - {x: 6, y: -292}
+      - {x: 6, y: -280}
+      - {x: 4, y: -274}
+      - {x: -6, y: -270}
+      - {x: -12, y: -270}
+      - {x: -16, y: -272}
+      - {x: -18, y: -276}
+      - {x: -24, y: -276}
+      - {x: -28, y: -280}
+      - {x: -28, y: -278}
+      - {x: -26, y: -276}
+      - {x: -22, y: -276}
+      - {x: -18, y: -272}
+      - {x: -18, y: -268}
+      - {x: -22, y: -264}
+      - {x: -32, y: -256}
+      - {x: -28, y: -252}
+      - {x: -26, y: -244}
+      - {x: -18, y: -242}
+      - {x: -26, y: -252}
+      - {x: -26, y: -256}
+      - {x: -24, y: -262}
+      - {x: -18, y: -268}
+      - {x: -12, y: -270}
+      - {x: 2, y: -270}
+      - {x: 6, y: -246}
+      - {x: 6, y: -222}
+      - {x: -6, y: -218}
+      - {x: -12, y: -218}
+      - {x: -20, y: -226}
+      - {x: -10, y: -214}
+      - {x: -10, y: -210}
+      - {x: -16, y: -192}
+      - {x: -30, y: -184}
+      - {x: -44, y: -160}
+      - {x: -62, y: -156}
+      - {x: -64, y: -162}
+      - {x: -64, y: -166}
+      - {x: -64, y: -158}
+      - {x: -70, y: -82}
+      - {x: -134, y: -28}
+      - {x: -142, y: -44}
+      - {x: -142, y: -48}
+      - {x: -142, y: -44}
+      - {x: -146, y: -40}
+      - {x: -152, y: -38}
+      - {x: -170, y: -42}
+      - {x: -182, y: -48}
+      - {x: -190, y: -50}
+      - {x: -194, y: -56}
+      - {x: -198, y: -56}
+      - {x: -192, y: -52}
+      - {x: -188, y: -50}
+      - {x: -182, y: -48}
+      - {x: -174, y: -44}
+      - {x: -168, y: -42}
+      - {x: -172, y: -28}
+      - {x: -188, y: -30}
+      - {x: -222, y: -22}
+      - {x: -334, y: -22}
+      - {x: -338, y: -24}
+      - {x: -342, y: -36}
+      - {x: -334, y: -44}
+      - {x: -330, y: -46}
+      - {x: -310, y: -46}
+      - {x: -312, y: -46}
+      - {x: -316, y: -48}
+      - {x: -320, y: -46}
+      - {x: -324, y: -46}
+      - {x: -336, y: -50}
+      - {x: -340, y: -42}
+      - {x: -346, y: -42}
+      - {x: -342, y: -38}
+      - {x: -342, y: -32}
+      - {x: -344, y: -28}
+      - {x: -358, y: -22}
+      - {x: -392, y: -22}
+      - {x: -428, y: -34}
+      - {x: -430, y: -40}
+      - {x: -430, y: -44}
+      - {x: -432, y: -54}
+      - {x: -432, y: -58}
+      - {x: -426, y: -64}
+      - {x: -422, y: -64}
+      - {x: -418, y: -60}
+      - {x: -406, y: -56}
+      - {x: -400, y: -60}
+      - {x: -394, y: -60}
+      - {x: -410, y: -60}
+      - {x: -418, y: -64}
+      - {x: -422, y: -68}
+      - {x: -422, y: -72}
+      - {x: -420, y: -78}
+      - {x: -404, y: -74}
+      - {x: -404, y: -84}
+      - {x: -402, y: -88}
+      - {x: -410, y: -78}
+      - {x: -424, y: -78}
+      - {x: -428, y: -82}
+      - {x: -430, y: -94}
+      - {x: -426, y: -98}
+      - {x: -432, y: -96}
+      - {x: -444, y: -102}
+      - {x: -446, y: -120}
+      - {x: -446, y: -124}
+      - {x: -458, y: -162}
+      - {x: -448, y: -170}
+      - {x: -444, y: -170}
+      - {x: -448, y: -172}
+      - {x: -452, y: -168}
+      - {x: -464, y: -160}
+      - {x: -478, y: -160}
+      - {x: -490, y: -162}
+      - {x: -496, y: -164}
+      - {x: -504, y: -194}
+      - {x: -500, y: -204}
+      - {x: -494, y: -202}
+      - {x: -490, y: -198}
+      - {x: -486, y: -192}
+      - {x: -486, y: -188}
+      - {x: -486, y: -190}
+      - {x: -484, y: -196}
+      - {x: -488, y: -198}
+      - {x: -502, y: -208}
+      - {x: -502, y: -218}
+      - {x: -500, y: -222}
+      - {x: -496, y: -226}
+      - {x: -496, y: -242}
+      - {x: -488, y: -246}
+      - {x: -488, y: -244}
+      - {x: -490, y: -246}
+      - {x: -492, y: -244}
+      - {x: -498, y: -242}
+      - {x: -514, y: -250}
+      - {x: -516, y: -250}
+      - {x: -516, y: -288}
+      - {x: -504, y: -314}
+      - {x: -490, y: -314}
+      - {x: -484, y: -310}
+      - {x: -498, y: -318}
+      - {x: -498, y: -324}
+      - {x: -492, y: -332}
+      - {x: -488, y: -348}
+      - {x: -448, y: -366}
+      - {x: -436, y: -360}
+      - {x: -430, y: -356}
+      - {x: -430, y: -360}
+      - {x: -426, y: -364}
+      - {x: -422, y: -364}
+      - {x: -424, y: -364}
+      - {x: -428, y: -368}
+      - {x: -430, y: -360}
+      - {x: -436, y: -360}
+      - {x: -440, y: -364}
+      - {x: -440, y: -376}
+      - {x: -434, y: -406}
+      - {x: -414, y: -470}
+      - {x: -358, y: -488}
+      - {x: -300, y: -488}
+      - {x: -230, y: -480}
+      - {x: -226, y: -464}
+      - {x: -226, y: -456}
+      - {x: -226, y: -468}
+    - - {x: -558, y: -128}
+      - {x: -590, y: -78}
+      - {x: -626, y: -46}
+      - {x: -688, y: -40}
+      - {x: -860, y: -40}
+      - {x: -956, y: -72}
+      - {x: -984, y: -136}
+      - {x: -984, y: -378}
+      - {x: -980, y: -426}
+      - {x: -964, y: -470}
+      - {x: -930, y: -472}
+      - {x: -696, y: -472}
+      - {x: -618, y: -464}
+      - {x: -552, y: -386}
+      - {x: -552, y: -184}
+    - - {x: 324, y: -428}
+      - {x: 320, y: -434}
+      - {x: 320, y: -446}
+      - {x: 324, y: -448}
+      - {x: 330, y: -450}
+      - {x: 336, y: -450}
+      - {x: 342, y: -444}
+      - {x: 342, y: -434}
+      - {x: 336, y: -428}
+    - - {x: 112, y: -358}
+      - {x: 100, y: -364}
+      - {x: 98, y: -374}
+      - {x: 98, y: -388}
+      - {x: 108, y: -412}
+      - {x: 116, y: -416}
+      - {x: 132, y: -416}
+      - {x: 140, y: -410}
+      - {x: 140, y: -388}
+      - {x: 124, y: -358}
+    - - {x: -52, y: -354}
+      - {x: -46, y: -358}
+      - {x: -32, y: -358}
+      - {x: -32, y: -350}
+      - {x: -34, y: -344}
+      - {x: -48, y: -344}
+      - {x: -52, y: -348}
+    - - {x: 78, y: -276}
+      - {x: 74, y: -284}
+      - {x: 74, y: -292}
+      - {x: 76, y: -294}
+      - {x: 84, y: -294}
+      - {x: 92, y: -292}
+      - {x: 92, y: -280}
+      - {x: 88, y: -276}
+    - - {x: -510, y: -220}
+      - {x: -514, y: -228}
+      - {x: -514, y: -238}
+      - {x: -506, y: -238}
+      - {x: -500, y: -236}
+      - {x: -500, y: -224}
+      - {x: -504, y: -220}
+    - - {x: -38, y: -174}
+      - {x: -44, y: -180}
+      - {x: -44, y: -184}
+      - {x: -40, y: -188}
+      - {x: -36, y: -188}
+      - {x: -30, y: -182}
+      - {x: -30, y: -178}
+      - {x: -34, y: -174}
+    - - {x: -442, y: -88}
+      - {x: -446, y: -92}
+      - {x: -446, y: -96}
+      - {x: -442, y: -100}
+      - {x: -438, y: -100}
+      - {x: -434, y: -96}
+      - {x: -434, y: -92}
+      - {x: -438, y: -88}
+    - - {x: 164, y: -66}
+      - {x: 164, y: -82}
+      - {x: 168, y: -92}
+      - {x: 186, y: -96}
+      - {x: 198, y: -96}
+      - {x: 204, y: -94}
+      - {x: 204, y: -70}
+      - {x: 188, y: -66}
+    - - {x: -852, y: 510}
+      - {x: -1024, y: 406}
+      - {x: -1024, y: 104}
+      - {x: -1018, y: 78}
+      - {x: -940, y: 2}
+      - {x: -506, y: 2}
+      - {x: -506, y: 494}
+      - {x: -546, y: 510}
+    - - {x: 296, y: 508}
+      - {x: 290, y: 512}
+      - {x: 226, y: 512}
+      - {x: 180, y: 380}
+      - {x: 180, y: 170}
+      - {x: 212, y: 74}
+      - {x: 246, y: 42}
+      - {x: 296, y: 42}
+      - {x: 332, y: 286}
+      - {x: 332, y: 350}
+      - {x: 322, y: 404}
+    - - {x: 1024, y: 558}
+      - {x: 1024, y: 998}
+      - {x: 906, y: 1024}
+      - {x: 624, y: 1024}
+      - {x: 510, y: 900}
+      - {x: 510, y: 446}
+      - {x: 744, y: 244}
+      - {x: 782, y: 244}
+      - {x: 780, y: 248}
+      - {x: 782, y: 258}
+      - {x: 784, y: 278}
+    - - {x: -304, y: 532}
+      - {x: -304, y: 254}
+      - {x: -208, y: 254}
+      - {x: -208, y: 532}
+    - - {x: 504, y: 874}
+      - {x: 502, y: 892}
+      - {x: 456, y: 976}
+      - {x: 340, y: 1024}
+      - {x: 122, y: 1024}
+      - {x: 28, y: 972}
+      - {x: 20, y: 936}
+      - {x: 8, y: 782}
+      - {x: 8, y: 612}
+      - {x: 12, y: 592}
+      - {x: 120, y: 512}
+      - {x: 304, y: 512}
+      - {x: 396, y: 526}
+      - {x: 464, y: 580}
+      - {x: 504, y: 678}
+    - - {x: -788, y: 582}
+      - {x: -798, y: 562}
+      - {x: -798, y: 528}
+      - {x: -778, y: 522}
+      - {x: -746, y: 522}
+      - {x: -736, y: 530}
+      - {x: -736, y: 572}
+      - {x: -750, y: 582}
+    - - {x: -894, y: 612}
+      - {x: -900, y: 608}
+      - {x: -900, y: 568}
+      - {x: -896, y: 542}
+      - {x: -848, y: 542}
+      - {x: -848, y: 604}
+      - {x: -856, y: 612}
+    - - {x: -674, y: 608}
+      - {x: -688, y: 602}
+      - {x: -688, y: 568}
+      - {x: -674, y: 542}
+      - {x: -640, y: 542}
+      - {x: -628, y: 556}
+      - {x: -628, y: 576}
+      - {x: -658, y: 608}
+    - - {x: -976, y: 686}
+      - {x: -990, y: 668}
+      - {x: -996, y: 662}
+      - {x: -996, y: 632}
+      - {x: -994, y: 628}
+      - {x: -950, y: 628}
+      - {x: -928, y: 642}
+      - {x: -928, y: 686}
+    - - {x: -604, y: 680}
+      - {x: -614, y: 676}
+      - {x: -614, y: 648}
+      - {x: -608, y: 634}
+      - {x: -544, y: 634}
+      - {x: -544, y: 668}
+      - {x: -560, y: 680}
+    - - {x: -524, y: 794}
+      - {x: -584, y: 794}
+      - {x: -586, y: 792}
+      - {x: -586, y: 746}
+      - {x: -554, y: 740}
+      - {x: -532, y: 740}
+      - {x: -522, y: 750}
+      - {x: -522, y: 788}
+    - - {x: -976, y: 796}
+      - {x: -1000, y: 796}
+      - {x: -1024, y: 786}
+      - {x: -1024, y: 758}
+      - {x: -1022, y: 744}
+      - {x: -946, y: 744}
+      - {x: -940, y: 748}
+      - {x: -940, y: 788}
+      - {x: -946, y: 792}
+    - - {x: -298, y: 1024}
+      - {x: -304, y: 1020}
+      - {x: -304, y: 996}
+      - {x: -280, y: 766}
+      - {x: -270, y: 754}
+      - {x: -244, y: 754}
+      - {x: -222, y: 766}
+      - {x: -212, y: 840}
+      - {x: -212, y: 1024}
+    - - {x: -964, y: 906}
+      - {x: -980, y: 886}
+      - {x: -980, y: 874}
+      - {x: -974, y: 852}
+      - {x: -960, y: 842}
+      - {x: -944, y: 842}
+      - {x: -936, y: 844}
+      - {x: -924, y: 868}
+      - {x: -924, y: 892}
+      - {x: -942, y: 906}
+    - - {x: -592, y: 904}
+      - {x: -604, y: 900}
+      - {x: -604, y: 864}
+      - {x: -592, y: 850}
+      - {x: -568, y: 850}
+      - {x: -552, y: 856}
+      - {x: -552, y: 896}
+      - {x: -568, y: 904}
+    - - {x: -696, y: 974}
+      - {x: -700, y: 964}
+      - {x: -700, y: 948}
+      - {x: -654, y: 920}
+      - {x: -634, y: 920}
+      - {x: -630, y: 924}
+      - {x: -630, y: 940}
+      - {x: -642, y: 974}
+    - - {x: -864, y: 982}
+      - {x: -896, y: 982}
+      - {x: -904, y: 974}
+      - {x: -904, y: 940}
+      - {x: -902, y: 924}
+      - {x: -900, y: 922}
+      - {x: -864, y: 922}
+      - {x: -842, y: 942}
+      - {x: -842, y: 974}
+      - {x: -844, y: 978}
+    - - {x: -742, y: 1008}
+      - {x: -780, y: 1008}
+      - {x: -794, y: 994}
+      - {x: -794, y: 956}
+      - {x: -746, y: 956}
+      - {x: -740, y: 958}
+      - {x: -732, y: 968}
+      - {x: -732, y: 984}
+      - {x: -740, y: 1006}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

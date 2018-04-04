@@ -14,6 +14,7 @@ public class Player_Detection : MonoBehaviour {
 	private int numOfPoints;
 	float counter = 0;
 	private bool isDamaging = false;
+	private Animator childAnim;
 
 	private float distanceToSeek;
 
@@ -24,7 +25,7 @@ public class Player_Detection : MonoBehaviour {
 	}
 
 	void Start() {
-		
+		childAnim = GetComponentInChildren<Animator>();
 		for(int i = 0; i < numOfPoints; i++) {
 			Waypoints[i] = WaypointParent.GetChild(i).GetComponent<Transform>();
 			Debug.Log(i);
@@ -42,7 +43,9 @@ public class Player_Detection : MonoBehaviour {
 					} else {
 						isDamaging = true;
 						if (pos.magnitude <= 2.5f) {
-							target.GetComponent<PlayerHealth> ().TakeDamage ((int)damage * Time.deltaTime);
+							childAnim.SetBool("isAttacking", true);
+						} else {
+							childAnim.SetBool("isAttacking", false);
 						}
 					} 
 				} else {

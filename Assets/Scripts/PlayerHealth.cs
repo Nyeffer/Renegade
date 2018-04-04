@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
 	public int maxHealth = 100;
 	public float curHealth;
+	public GameObject Weapon;
 	public Slider hpBar;
+	private Animator anim;
+	float counter;
 
 	bool isDead;
 	bool isDamaged;
@@ -18,7 +22,21 @@ public class PlayerHealth : MonoBehaviour {
 		TakeDamage(0);
 	}
 
+	void Start() {
+		counter = 0;
+		anim = GetComponent<Animator>();
+	}
+
 	void Update() {	
+		if(isDead) {
+			anim.SetBool("isDead", true);
+			if(counter != 3) {
+				counter += Time.deltaTime;
+				Weapon.SetActive(false);				
+			} else {
+				SceneManager.LoadScene("Lose", LoadSceneMode.Single);
+			}
+		}
 	}
 
 	public void TakeDamage(float damageDealt) {
