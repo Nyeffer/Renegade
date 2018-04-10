@@ -6,8 +6,6 @@ public class EnemyHealth : MonoBehaviour {
 
 	public int maxHealth = 100;
 	public int curHealth;
-	public Material FullHp;
-	public Material NearDeath;
 
 	private GameObject Player_bullet;
 
@@ -20,7 +18,6 @@ public class EnemyHealth : MonoBehaviour {
 		renderer = GetComponent<Renderer>();
 		curHealth = maxHealth;
 		TakeDamage(0);
-		renderer.material = FullHp;
 	}
 
 	void Update() {
@@ -30,9 +27,6 @@ public class EnemyHealth : MonoBehaviour {
 			// Do Something else
 		} 
 		isDamaged = false;
-		if(curHealth <= 25) {
-			renderer.material = NearDeath;
-		}
 	}
 
 	public void TakeDamage(int damageDealt) {

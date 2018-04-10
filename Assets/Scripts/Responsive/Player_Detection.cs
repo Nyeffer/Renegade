@@ -13,6 +13,7 @@ public class Player_Detection : MonoBehaviour {
 	public Transform WaypointParent;
 	private int numOfPoints;
 	float counter = 0;
+	float otherCounter = 0;
 	private bool isDamaging = false;
 	private Animator childAnim;
 
@@ -42,21 +43,15 @@ public class Player_Detection : MonoBehaviour {
 						this.transform.Translate (0, 0, moveSpeed * Time.deltaTime);
 					} else {
 						isDamaging = true;
-						if (pos.magnitude <= 2.5f) {
-							childAnim.SetBool("isAttacking", true);
-						} else {
-							childAnim.SetBool("isAttacking", false);
-						}
+						childAnim.SetBool("isAttacking", true);
 					} 
 				} else {
-					if (counter >= 2) {
+					if (counter <= 0.5f) {
+						childAnim.SetBool("isAttacking", false);
 						counter = 0;
 						isDamaging = false;
 					} else {
 						this.transform.Translate (0, 0, (moveSpeed * 0) * Time.deltaTime);
-						if (pos.magnitude <= 2.5f) {
-							target.GetComponent<PlayerHealth> ().TakeDamage ((int)damage * Time.deltaTime);
-						}
 						counter += Time.deltaTime;
 					}
 				}

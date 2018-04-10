@@ -14,17 +14,22 @@ public class Skill_Shoot_NormalShot : MonoBehaviour, IPointerDownHandler, IPoint
 	private bool isActive = false; // Check if we're Firing
 	private float counter = 2.0f; // Check if we're gonna Fire or not
 	public const int skillValue = 1; // Number that's gonna be used in Character Creation
+	public AudioClip[] sounds;
+	private AudioSource source;
 	Color notSkillActive; // Color to reset the Color
 	
 
 	void Start() {
 		notSkillActive = gameObject.GetComponent<Image>().color;
+		source = GetComponent<AudioSource>();
 	}
 	void Update() {
 		if(isActive) {
 			gameObject.GetComponent<Image>().color = skillUsing;
 			if(counter > 1/firingRate) {
 				Instantiate(bullet, nuzzle.position, nuzzle.rotation);
+				int vol = Random.Range(1,3);
+				source.PlayOneShot(sounds[vol], vol * vol);
 				counter = 0.0f;
 			} else {
 				counter += 1 * Time.deltaTime;

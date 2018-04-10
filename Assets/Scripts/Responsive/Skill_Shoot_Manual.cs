@@ -13,10 +13,13 @@ public class Skill_Shoot_Manual : MonoBehaviour, IPointerDownHandler, IPointerUp
 	int damMultiplier; 
 	private int origDamage; // Original Damage from Bullet
 	private int damage; // Damage from Bullet
+	public AudioClip sound;
+	private AudioSource source;
 	
 
 	void Start() {
 		charge = 0.0f;
+		source = GetComponent<AudioSource>();
 		origDamage = bullet.GetComponent<BulletBehavior>().GetDamage();
 		damage = origDamage;
 		damMultiplier = 1;
@@ -43,6 +46,7 @@ public class Skill_Shoot_Manual : MonoBehaviour, IPointerDownHandler, IPointerUp
 	public virtual void OnPointerDown(PointerEventData ped) {
 		bullet.GetComponent<BulletBehavior>().SetDamage((int)(damMultiplier * damage));
 		Instantiate(bullet, nuzzle.position, nuzzle.rotation);
+		source.PlayOneShot(sound, charge * charge);
 		Debug.Log(bullet.GetComponent<BulletBehavior>().GetDamage());
 	}
 
