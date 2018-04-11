@@ -7,15 +7,14 @@ public class Player_Detection : MonoBehaviour {
 	private Rigidbody rigidbody;
 	public Vector3 velocity;
 	public bool isSeeking;
-	public int damage = 10;
 	public float moveSpeed;
-	private Transform[] Waypoints;
-	public Transform WaypointParent;
 	private int numOfPoints;
 	float counter = 0;
 	float otherCounter = 0;
 	private bool isDamaging = false;
 	private Animator childAnim;
+	private bool child;
+	public GameObject weapon;
 
 	private float distanceToSeek;
 
@@ -27,14 +26,26 @@ public class Player_Detection : MonoBehaviour {
 
 	void Start() {
 		childAnim = GetComponentInChildren<Animator>();
-		for(int i = 0; i < numOfPoints; i++) {
-			Waypoints[i] = WaypointParent.GetChild(i).GetComponent<Transform>();
-			Debug.Log(i);
+		weapon.SetActive(false);
+	}
+
+	void Update() {
+		child = GetComponentInChildren<EnemyHealth>().GetisDead();
+		if(child) {
+			childAnim.SetBool("isDead", true);
+			
+			if(counter >= 10.0f) {
+				counter = 0;
+				Destroy(this.gameObject);
+			} else {
+				isSeeking = false;
+				counter += Time.deltaTime;
+			}
 		}
 	}
 
 	void FixedUpdate() {
-		if(isSeeking) {
+		if(isSeeking && !child) {
 			if(Vector3.Distance(target.transform.position, this.transform.position) < distanceToSeek) {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
@@ -44,6 +55,7 @@ public class Player_Detection : MonoBehaviour {
 					} else {
 						isDamaging = true;
 						childAnim.SetBool("isAttacking", true);
+						weapon.SetActive(true);
 					} 
 				} else {
 					if (counter <= 0.5f) {

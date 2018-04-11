@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour {
 	public GameObject Weapon;
 	public Slider hpBar;
 	private Animator anim;
+	public GameObject cam;
 	float counter;
 
 	bool isDead;
@@ -30,10 +31,13 @@ public class PlayerHealth : MonoBehaviour {
 	void Update() {	
 		if(isDead) {
 			anim.SetBool("isDead", true);
-			if(counter != 3) {
+			if(counter <= 3) {
+				cam.GetComponent<CameraChange>().ZoomDeath();
 				counter += Time.deltaTime;
+				Debug.Log(counter);
 				Weapon.SetActive(false);				
 			} else {
+				Debug.Log("Lose");
 				SceneManager.LoadScene("Lose", LoadSceneMode.Single);
 			}
 		}
@@ -53,5 +57,8 @@ public class PlayerHealth : MonoBehaviour {
 		isDead = true;
 	}
 
+	public bool GetisDead() {
+		return isDead;
+	}
 
 }

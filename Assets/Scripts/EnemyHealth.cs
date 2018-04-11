@@ -33,14 +33,14 @@ public class EnemyHealth : MonoBehaviour {
 		isDamaged = true;
 		curHealth -= damageDealt;
 
-		if(curHealth <= 0 && !isDead) {
+		if(curHealth <= 0 && !isDead) {		
 			Death();
 		}
 	}
 
 	void Death() {
+		GetComponent<CapsuleCollider>().enabled = false;
 		isDead = true;
-		Destroy(this.gameObject);
 	}
 
 	void OnTriggerEnter(Collider col) {
@@ -50,4 +50,8 @@ public class EnemyHealth : MonoBehaviour {
 			Destroy(col.gameObject);
 		}
  	}
+
+	public bool GetisDead() {
+		return isDead;
+	}
 }

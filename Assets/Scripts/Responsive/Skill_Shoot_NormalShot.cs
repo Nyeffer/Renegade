@@ -29,7 +29,7 @@ public class Skill_Shoot_NormalShot : MonoBehaviour, IPointerDownHandler, IPoint
 			if(counter > 1/firingRate) {
 				Instantiate(bullet, nuzzle.position, nuzzle.rotation);
 				int vol = Random.Range(1,3);
-				source.PlayOneShot(sounds[vol], vol * vol);
+				source.PlayOneShot(sounds[vol], vol * (10/vol));
 				counter = 0.0f;
 			} else {
 				counter += 1 * Time.deltaTime;

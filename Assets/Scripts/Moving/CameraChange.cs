@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CameraChange : MonoBehaviour {
 	// Variables
+	public GameObject player;
 	public bool isFirstPerson;
 	public Transform[] views;
 	public float transitionSpeed;
 	Transform currentView;
+	bool stillAlive;
 
 	void Start() {
 		if (!isFirstPerson) {
@@ -50,5 +52,15 @@ public class CameraChange : MonoBehaviour {
 
 		transform.eulerAngles = currentRotation;
 		isFirstPerson = false;
+	}
+
+	public void ZoomDeath() {
+		transform.position = Vector3.Lerp(transform.position, views[2].position, Time.deltaTime * transitionSpeed);
+		Vector3 currentRotation = new Vector3(
+			Mathf.LerpAngle(transform.rotation.eulerAngles.x, currentView.transform.rotation.eulerAngles.x, Time.deltaTime * transitionSpeed), 
+			Mathf.LerpAngle(transform.rotation.eulerAngles.y, currentView.transform.rotation.eulerAngles.y, Time.deltaTime * transitionSpeed),
+			Mathf.LerpAngle(transform.rotation.eulerAngles.z, currentView.transform.rotation.eulerAngles.z, Time.deltaTime * transitionSpeed));
+
+		transform.eulerAngles = currentRotation;
 	}
 }
