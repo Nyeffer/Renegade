@@ -12,11 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus.unity
     guid: 3d044555243224c42a791199748ffbd2
   - enabled: 1
-    path: Assets/Scenes/CharacterSelection.unity
-    guid: 53a50cf66c1a90445b0258f2e0527147
-  - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
     guid: 0b9e18826732daf4bb64555d7add4a5a
   - enabled: 1
+    path: Assets/Scenes/CharacterSelection.unity
+    guid: 53a50cf66c1a90445b0258f2e0527147
+  - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 029aa7075663f4145b2ac719ed3e3663
+  - enabled: 1
+    path: Assets/Scenes/Bandit_Camp_Survival.unity
+    guid: 818a1fd86a1a55349b2e7ccf229899ec
+  - enabled: 0
+    path: Assets/Scenes/Ads.unity
+    guid: a8a60b421505d23468288350cd0ff1b6

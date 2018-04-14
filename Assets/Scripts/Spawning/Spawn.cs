@@ -14,6 +14,8 @@ public class Spawn : MonoBehaviour {
 	private float counter;
 	void Start() {
 		isPlayerAround = false;
+		Instantiate(Enemy, SpawnPoint.transform.position, Quaternion.identity);
+		num_Spawned++;
 	}
 	void Update() {
 		if (isPlayerAround) {

@@ -5,31 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour {
 
-	// The Entire platform
-	public GameObject CharacterSelection;
-	public GameObject Player_Hair;
-	public GameObject Player_Body;
-	public GameObject cosmedic;
-
 	// Level Selection - Go To Level 5
 	public void StartToLevelSelect() {
 		SceneManager.LoadScene("CharacterSelection", LoadSceneMode.Single);
 		PlayerPrefs.SetInt("PlayerLevel", 5);
 	}
-
-	// Make the Rotating Platform to the Right
-	public void RotateCharacterSelectionRight() {
-		CharacterSelection.transform.Rotate(new Vector3(0, 90, 0));
+	// Player Selection - Girl
+	public void PickUpGirl() {
+		PlayerPrefs.SetInt("Gender", 2);
+		SceneManager.LoadScene("Bandit_Camp_Survival", LoadSceneMode.Single);
 	}
 
-	// Make the Rotating Platform to the Left
-	public void RotateCharacterSelectionLeft() {
-		CharacterSelection.transform.Rotate(new Vector3(0, -90, 0));
+	// Player Selection - Boy
+	public void PickUpBoy() {
+		PlayerPrefs.SetInt("Gender", 1);
+		SceneManager.LoadScene("Bandit_Camp_Survival", LoadSceneMode.Single);
 	}
 
 	// Go back to the Menus/Ads
 	public void PlayAgain() {
-		SceneManager.LoadScene("Ads", LoadSceneMode.Single);
+		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
 	}
 	
 	// Quit the Game
@@ -50,14 +45,5 @@ public class Buttons : MonoBehaviour {
 	// Go to the Menus
 	public void OnExit() {
 		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
-	}
-
-	// Change the Player's Hair to HairOption_1
-	public void SetHair1() {
-		Player_Hair.GetComponent<MeshFilter>().mesh = cosmedic.GetComponent<MakePlayer_CharacterCreate>().GetHair1();
-	}
-	// Change the Player's Hair to HairOption_2
-	public void SetHair2() {
-		Player_Hair.GetComponent<MeshFilter>().mesh = cosmedic.GetComponent<MakePlayer_CharacterCreate>().GetHair2();
 	}
 }

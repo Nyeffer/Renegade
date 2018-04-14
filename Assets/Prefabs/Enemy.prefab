@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 95586344862865714}
   - component: {fileID: 136560609291138912}
   - component: {fileID: 114223183345188362}
+  - component: {fileID: 114683147563263864}
   m_Layer: 0
   m_Name: Injured Walk
   m_TagString: Enemy
@@ -1109,7 +1110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388548529235446}
   m_LocalRotation: {x: -0, y: 0.99141306, z: -0, w: -0.13076788}
-  m_LocalPosition: {x: 318.7, y: 17.19, z: 284.72}
+  m_LocalPosition: {x: 318.7, y: 17.19, z: 282.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4177625471379250}
@@ -1351,6 +1352,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   curHealth: 0
+--- !u!114 &114683147563263864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1377480425530346}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4650989fc8b6d7d4b9ccca90a6a25d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 1988398448288962, guid: a9132a63af005d24da0d8f337f0c3e95, type: 2}
+  SpawnPoint: {fileID: 4177625471379250}
+  maxNum_Enemies: 1
+  spawnRate: 1
 --- !u!114 &114825368147072150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1373,7 +1389,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136560609291138912
 CapsuleCollider:

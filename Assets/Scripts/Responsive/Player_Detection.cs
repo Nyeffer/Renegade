@@ -46,7 +46,7 @@ public class Player_Detection : MonoBehaviour {
 
 	void FixedUpdate() {
 		if(isSeeking && !child) {
-			if(Vector3.Distance(target.transform.position, this.transform.position) < distanceToSeek) {
+			if(Vector3.Distance(target.transform.position, this.transform.position) < distanceToSeek + 5) {
 				Vector3 pos = target.transform.position - this.transform.position;
 				this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(pos), 0.1f);
 				if (!isDamaging) {

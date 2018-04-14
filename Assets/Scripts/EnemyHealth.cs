@@ -33,8 +33,14 @@ public class EnemyHealth : MonoBehaviour {
 		isDamaged = true;
 		curHealth -= damageDealt;
 
-		if(curHealth <= 0 && !isDead) {		
-			Death();
+		if(curHealth <= 0 && !isDead) {
+			if(Random.RandomRange(0,2) == 1) {
+				Debug.Log("Heal");
+				GetComponent<Spawn>().enabled = true;
+				Death();
+			} else {
+				Death();
+			}
 		}
 	}
 
