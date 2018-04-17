@@ -13,13 +13,13 @@ public class Buttons : MonoBehaviour {
 	// Player Selection - Girl
 	public void PickUpGirl() {
 		PlayerPrefs.SetInt("Gender", 2);
-		SceneManager.LoadScene("Bandit_Camp_Survival", LoadSceneMode.Single);
+		SceneManager.LoadScene("LevelSelection", LoadSceneMode.Single);
 	}
 
 	// Player Selection - Boy
 	public void PickUpBoy() {
 		PlayerPrefs.SetInt("Gender", 1);
-		SceneManager.LoadScene("Bandit_Camp_Survival", LoadSceneMode.Single);
+		SceneManager.LoadScene("LevelSelection", LoadSceneMode.Single);
 	}
 
 	// Go back to the Menus/Ads
@@ -45,5 +45,13 @@ public class Buttons : MonoBehaviour {
 	// Go to the Menus
 	public void OnExit() {
 		SceneManager.LoadScene("Menus", LoadSceneMode.Single);
+	}
+
+	public void SelectLevel_S() {
+		SceneManager.LoadScene("Bandit_Camp_Survival", LoadSceneMode.Single);
+	}
+
+	public void SelectLevel_T() {
+		SceneManager.LoadScene("Bandit_Camp_TimeTrial", LoadSceneMode.Single);
 	}
 }

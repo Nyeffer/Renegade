@@ -26,3 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Ads.unity
     guid: a8a60b421505d23468288350cd0ff1b6
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 0fb0d6999d0f05d47830aaa849eac11a
+  - enabled: 1
+    path: Assets/Scenes/Bandit_Camp_TimeTrial.unity
+    guid: ad27e2c00963945469d5b665aa798356

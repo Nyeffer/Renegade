@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameClock : MonoBehaviour {
-
+	public bool isSurvival;
 	private Text myText;
 	private int mins;
 	public float secs;
@@ -19,7 +20,12 @@ public class gameClock : MonoBehaviour {
 		realSec = secs % 60;
 		mins = ((int)secs / 60);
 		if(secs <= 0) {
-			Application.Quit();
+			if(isSurvival) {
+				SceneManager.LoadScene("Win", LoadSceneMode.Single);
+			} else {
+				SceneManager.LoadScene("Lose", LoadSceneMode.Single);
+			}
+ 			
 		}
 		if (realSec < 10.0f) {
 			myText.text = " " + mins.ToString()  +  " : 0"  + ((int)realSec).ToString();
